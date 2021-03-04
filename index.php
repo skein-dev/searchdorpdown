@@ -9,6 +9,8 @@
     <title>Website</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/css/themes/lite-purple.min.css">
+    <link rel="stylesheet" href="assets/styles/css/style.css">
+
 
 </head>
 
@@ -20,7 +22,7 @@
             </div>
 
             <div class="d-flex align-items-center">
-				<a style="font-size:20px;" href="./members.php">Website.com</a>
+                <a style="font-size:20px;" href="./members.php">Website.com</a>
             </div>
 
             <div style="margin: auto"></div>
@@ -30,13 +32,15 @@
                 <i class="i-Full-Screen header-icon d-none d-sm-inline-block" data-fullscreen></i>
                 <!-- Notificaiton -->
                 <div id="view_notications" class="dropdown">
-                    <div class="badge-top-container" role="button" id="dropdownNotification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<div id="current_notifications" style="display:none;"></div>
+                    <div class="badge-top-container" role="button" id="dropdownNotification" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <div id="current_notifications" style="display:none;"></div>
                         <i class="i-Bell text-muted header-icon"></i>
                     </div>
                     <!-- Notification dropdown -->
-                    <div class="dropdown-menu dropdown-menu-right notification-dropdown  rtl-ps-none" aria-labelledby="dropdownNotification" data-perfect-scrollbar data-suppress-scroll-x="true">
-						
+                    <div class="dropdown-menu dropdown-menu-right notification-dropdown  rtl-ps-none"
+                        aria-labelledby="dropdownNotification" data-perfect-scrollbar data-suppress-scroll-x="true">
+
                     </div>
                 </div>
                 <!-- Notificaiton End -->
@@ -44,7 +48,8 @@
                 <!-- User avatar dropdown -->
                 <div class="dropdown">
                     <div class="user col align-self-end">
-                        <img src="./assets/images/faces/blank.png" id="userDropdown" alt="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="./assets/images/faces/blank.png" id="userDropdown" alt="" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                             <div class="dropdown-header">
@@ -61,7 +66,7 @@
         <div class="side-content-wrap">
             <div class="sidebar-left open  rtl-ps-none" data-perfect-scrollbar data-suppress-scroll-x="true">
                 <ul class="navigation-left">
-					 <li class="nav-item" data-item="dashboard">
+                    <li class="nav-item" data-item="dashboard">
                         <a id="nav_requestsms" class="nav-item-hold" href="#">
                             <i class="nav-icon i-Speach-Bubbles"></i>
                             <span class="nav-text">Menu Item</span>
@@ -73,8 +78,6 @@
             <div class="sidebar-overlay"></div>
         </div>
         <!--=============== Left side End ================-->
-		
-		
 
         <!-- ============ Body content start ============= -->
         <div class="main-content-wrap sidenav-open d-flex flex-column">
@@ -84,62 +87,73 @@
                     <li>Description</li>
                 </ul>
             </div>
-			
-			
             <div class="separator-breadcrumb border-top"></div>
-			
-			
+            <div class="col-md-32 mb-3">
+                <div class="card text-left">
 
-                <div class="col-md-32 mb-3">
-                    <div class="card text-left">
+                    <div class="card-body">
+                        <h4 class="card-title mb-3"> Title </h4>
 
-                        <div class="card-body">
-                            <h4 class="card-title mb-3"> Title </h4>
-                         
-							<input type="hidden" name="account_api_key" id="account_api_key" value="123" />
-							<input type="hidden" name="is_rental" id="is_rental" value="0" />
-							
-							<!-- THIS PART NEEDS TO BE CHANGED TO LOOK SAME STYLE BUT INCORPORATE SEARCH DROP DOWN METHOD -->
-							
-							<div class="btn-group">
-                            	<button id="service_select" name="service_select" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Service</button>
-                                <div class="dropdown-menu" x-placement="bottom-start">
-									<a onclick="SetButtonText('service_select', 'Service 1');SetPrice('0.50', '0.85', '1.00', 'Service 1');" class="dropdown-item" href="#/"><i class="i-Compass-2"> </i> Service 1</a>
-									<a onclick="SetButtonText('service_select', 'Service 2');SetPrice('0.50', '0.85', '1.00', 'Service 2');" class="dropdown-item" href="#/"><i class="i-Compass-2"> </i> Service 2</a>
-									<a onclick="SetButtonText('service_select', 'Service 3');SetPrice('0.50', '0.85', '1.00', 'Service 3');" class="dropdown-item" href="#/"><i class="i-Compass-2"> </i> Service 3</a>
-								</div>
+                        <input type="hidden" name="account_api_key" id="account_api_key" value="123" />
+                        <input type="hidden" name="is_rental" id="is_rental" value="0" />
+                        <!-- THIS PART NEEDS TO BE CHANGED TO LOOK SAME STYLE BUT INCORPORATE SEARCH DROP DOWN METHOD -->
+
+                        <div class="btn-group">
+                            <button id="service_select" name="service_select" type="button"
+                                class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Service</button>
+                            <div class="dropdown-menu" x-placement="bottom-start">
+                                <a onclick="SetButtonText('service_select', 'Service 1');SetPrice('0.50', '0.85', '1.00', 'Service 1');"
+                                    class="dropdown-item" href="#/"><i class="i-Compass-2"> </i> Service 1</a>
+                                <a onclick="SetButtonText('service_select', 'Service 2');SetPrice('0.50', '0.85', '1.00', 'Service 2');"
+                                    class="dropdown-item" href="#/"><i class="i-Compass-2"> </i> Service 2</a>
+                                <a onclick="SetButtonText('service_select', 'Service 3');SetPrice('0.50', '0.85', '1.00', 'Service 3');"
+                                    class="dropdown-item" href="#/"><i class="i-Compass-2"> </i> Service 3</a>
                             </div>
-							
-							
-							
-							<div class="btn-group">
-                            	<button id="service_select_2" name="service_select_2" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Service Name With Longer Text</button>
-                                <div class="dropdown-menu" x-placement="bottom-start">
-									<a onclick="SetButtonText('service_select_2', 'Service  With Longer Text');SetPrice('0.50', '0.85', '1.00', 'Service 1');" class="dropdown-item" href="#/"><i class="i-Compass-2"> </i> Service Name With Longer Text</a>
-									<a onclick="SetButtonText('service_select_2', 'Short');SetPrice('0.50', '0.85', '1.00', 'Service 2');" class="dropdown-item" href="#/"><i class="i-Compass-2"> </i> Short</a>
-									<a onclick="SetButtonText('service_select_2', 'Medium Length');SetPrice('0.50', '0.85', '1.00', 'Service 3');" class="dropdown-item" href="#/"><i class="i-Compass-2"> </i> Medium Length</a>
-								</div>
-                            </div>
-							
-							
-							<!-- END OF PART REQUIRED -->
-							
-							<script>
-								// SetButtonText : Start
-								function SetButtonText(button_name,button_text){
-									$("#" + button_name).html(button_text);
-									}
-							</script>
-
-
                         </div>
+
+                        <div class="btn-group">
+                            <button id="service_select_2" name="service_select_2" type="button"
+                                class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Service Name With Longer Text</button>
+                            <div class="dropdown-menu" x-placement="bottom-start">
+                                <a onclick="SetButtonText('service_select_2', 'Service  With Longer Text');SetPrice('0.50', '0.85', '1.00', 'Service 1');"
+                                    class="dropdown-item" href="#/"><i class="i-Compass-2"> </i> Service Name With
+                                    Longer Text</a>
+                                <a onclick="SetButtonText('service_select_2', 'Short');SetPrice('0.50', '0.85', '1.00', 'Service 2');"
+                                    class="dropdown-item" href="#/"><i class="i-Compass-2"> </i> Short</a>
+                                <a onclick="SetButtonText('service_select_2', 'Medium Length');SetPrice('0.50', '0.85', '1.00', 'Service 3');"
+                                    class="dropdown-item" href="#/"><i class="i-Compass-2"> </i> Medium Length</a>
+                            </div>
+                        </div>
+                        <!-- SEARCH DROP START -->
+                        <div class="btn-group">
+                            <div class="search-list">
+                                <select name="">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                    <option value="4">Four</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- SEARCH DROP END -->
+                        <!-- END OF PART REQUIRED -->
+
+                        <script>
+                            // SetButtonText : Start
+                            function SetButtonText(button_name, button_text) {
+                                $("#" + button_name).html(button_text);
+                            }
+                        </script>
+
+
                     </div>
                 </div>
-                <!-- end of col-->
-
+            </div>
+            <!-- end of col-->
             <!-- end of row-->
-			
-			<!-- Modal -->
+            <!-- Modal -->
             <div class="modal fade" id="show_modal_box" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
@@ -158,27 +172,17 @@
                     </div>
                 </div>
             </div>
-			<!-- End Modal -->
-          
-   
-  <!-- Footer Start -->
+            <!-- End Modal -->
+            <!-- Footer Start -->
             <div class="flex-grow-1"></div>
-           
-
-
-
         </div>
         <!-- ============ Body content End ============= -->
-</div>
+    </div>
     <!--=============== End app-admin-wrap ================-->
 
     <script src="./assets/js/vendor/jquery-3.3.1.min.js"></script>
     <script src="./assets/js/vendor/bootstrap.bundle.min.js"></script>
-
+    <script src="./assets/js/vendor/search-select.js"></script>
     <!-- page vendor js -->
-
-
-
 </body>
-
 </html>
